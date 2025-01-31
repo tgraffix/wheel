@@ -83,7 +83,7 @@ const properties: WheelProps = {
 
 const container = ref();
 
-let spinCount = 20;
+let spinCount = 40;
 let wheel: Wheel | undefined = undefined;
 
 const stopAndClearSound = () => {
@@ -127,7 +127,7 @@ const spin = () => {
     }
   };
 
-  wheel.rotationResistance = -400;
+  wheel.rotationResistance = -100;
   wheel.spin(wheel.rotationSpeed + random.int(1000, 1600));
 };
 
