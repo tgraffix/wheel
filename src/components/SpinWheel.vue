@@ -163,7 +163,7 @@ onMounted(() => {
     itemLabelRadiusMax: 1 - LabelLength.value
   });
 
-  wheel.spin(10);
+  wheel.spin(50);
 
   wheel.onRest = ($event) => {
     stopAndClearSound;
