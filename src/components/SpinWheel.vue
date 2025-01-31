@@ -116,13 +116,13 @@ const spin = () => {
     // Provide a more entertaining performance.
     switch (true) {
       case wheel.rotationSpeed < 400:
-        wheel.rotationResistance = -300;
+        wheel.rotationResistance = -100;
         break;
       case wheel.rotationSpeed < 100:
-        wheel.rotationResistance = -10;
+        wheel.rotationResistance = -75;
         break;
       case wheel.rotationSpeed < 30:
-        wheel.rotationResistance = -1;
+        wheel.rotationResistance = -400;
         break;
     }
   };
