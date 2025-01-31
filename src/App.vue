@@ -12,9 +12,9 @@
     <div class="max-w-screen overflow-x-hidden overflow-y-hidden">
       <div class="grid header text-center">
         <h1 class="col-12 mb-0 text-4xl sm:text-5xl md:text-6xl">
-          <span v-if="!Fairmode">Unfair</span><span v-else>Fair</span>&nbsp;<span
+          <span v-if="!Fairmode"></span><span v-else>Fair</span>&nbsp;<span
             class="white-space-nowrap"
-            >Spin Wheel</span
+            >Spin Wheel of Doom!</span
           >
         </h1>
         <p class="col-12 my-0 py-0 text-base sm:text-lg md:text-2xl" v-if="!Fairmode">
@@ -247,6 +247,7 @@ onMounted(async () => {
   bottom: 0;
   right: 0;
   border-radius: 50%;
+
 }
 
 .sidebar-button {
