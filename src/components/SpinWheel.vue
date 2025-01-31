@@ -83,7 +83,7 @@ const properties: WheelProps = {
 
 const container = ref();
 
-let spinCount = 5;
+let spinCount = 20;
 let wheel: Wheel | undefined = undefined;
 
 const stopAndClearSound = () => {
