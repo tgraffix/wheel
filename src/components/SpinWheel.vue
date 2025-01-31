@@ -75,7 +75,7 @@ const properties: WheelProps = {
     '#904e55',
     '#8b7856'
   ],
-  rotationSpeedMax: 2000,
+  rotationSpeedMax: 4000,
   lineWidth: 1,
   lineColor: '#fff',
   items: []
@@ -83,7 +83,7 @@ const properties: WheelProps = {
 
 const container = ref();
 
-let spinCount = 0;
+let spinCount = 5;
 let wheel: Wheel | undefined = undefined;
 
 const stopAndClearSound = () => {
