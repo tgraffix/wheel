@@ -12,7 +12,7 @@
     <div class="max-w-screen overflow-x-hidden overflow-y-hidden">
       <div class="grid header text-center">
         <h1 class="col-12 mb-0 text-4xl sm:text-5xl md:text-6xl">
-          <span v-if="!Fairmode"></span><span v-else>Fair</span>&nbsp;<span
+          <span v-if="!Fairmode">Unfair </span><span v-else>Fair</span>&nbsp;<span
             class="white-space-nowrap"
             >Spin Wheel of Doom!</span
           >
@@ -110,6 +110,7 @@ const showInputGroupDialog = ref(false);
 const inputGroupName = ref('');
 const inputGroup = async () => {
   if (!itemService) return;
+
 
   await itemService.cleanUpGroup(inputGroupName.value);
   await itemService.addItems(
