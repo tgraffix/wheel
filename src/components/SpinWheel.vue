@@ -119,10 +119,10 @@ const spin = () => {
         wheel.rotationResistance = -1000;
         break;
       case wheel.rotationSpeed < 100:
-        wheel.rotationResistance = 150;
+        wheel.rotationResistance = 2150;
         break;
       case wheel.rotationSpeed < 30:
-        wheel.rotationResistance = 300;
+        wheel.rotationResistance = 2000;
         break;
     }
   };
