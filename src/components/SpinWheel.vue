@@ -75,7 +75,7 @@ const properties: WheelProps = {
     '#C1BC00',
     '#FF6161'
   ],
-  rotationSpeedMax: 2500,
+  rotationSpeedMax: 2000,
   lineWidth: .3,
   lineColor: '#000',
   items: []
