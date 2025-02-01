@@ -100,7 +100,7 @@ const playSound = () => {
     ? TickSound.value.value
     : `/sound/${TickSound.value.value}`;
   const audio = new Audio(src);
-  audio.volume = 0.3;
+  audio.volume = 0.2;
   audio.play();
 };
 
@@ -127,7 +127,7 @@ const spin = () => {
     }
   };
 
-  wheel.rotationResistance = -50;
+  wheel.rotationResistance = -40;
   wheel.spin(wheel.rotationSpeed + random.int(800, 1400));
 };
 
