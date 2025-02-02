@@ -127,7 +127,7 @@ const spin = () => {
     }
   };
 
-  wheel.rotationResistance = 1040;
+  wheel.rotationResistance = -40;
   wheel.spin(wheel.rotationSpeed + random.int(800, 1400));
 };
 
